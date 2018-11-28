@@ -63,5 +63,11 @@ git push origin master
 git clone url
 
 
+#if you someone pushed sth for you and you pulled iton github, you still need to pull it onto your local computer with:
+git pull
 
+
+##########
+##########
+https://github.com/tobyhodges/eipp-predoc-week-2018
 
