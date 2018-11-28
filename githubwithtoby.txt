@@ -1,0 +1,67 @@
+#usefull and initial git commands
+#when you are in embl network use git.embl.de
+mkdir Desktop/horsing-aroundcd 
+Desktop/horsing-around/
+git init
+ls -a
+git status
+echo '# Horsing Around' > README.md
+git add README.md #add only scripts that you really want to change when you commit them
+git status
+git commit -m 'added README'#add meaningfull comments
+git config user.name saragoetz#in case the user you are logged in as is not the same as your git user id
+git config user.email sara.goetz@embl.de
+git log
+#change README
+git add README.md
+git commit -m 'added some more details to README'
+git log
+git reset 28a19d17978d12ac992d7324242f03c05bdef7f5#reset to any previous state of this file
+git diff README.md#visualize changes 
+git checkout -- README.md
+#on github
+git remote add origin https://github.com/saragoetz/horsing-around.git #url to remote project; if you want to clone a project use command: git clone url
+git push origin master#synch with remote
+git pull origin master#get changes from remote
+
+##create new branch
+git checkout -b new_branch
+git status#on branch new_branch
+ls
+git log
+#change README, add new line
+
+#if you need to make changes in master branch
+#switch back to working on master
+git checkout master 
+#contains original README file
+#got back to new branch
+git checkout new_branch
+
+#modify READMe
+git checkout master
+#gives error message
+git stash#if you don't want to commit yet but information stays local
+git checkout master
+git checkout new_branch 
+git status#where did the changes go?
+git stash list
+git stash pop
+git help stash
+
+#wip stands for work in progress
+
+git merge new_branch
+
+git push origin master 
+
+#add collaborators on github homepage -> settings-> collaborators
+#branch protection rules
+
+#Require status checks to pass before merging
+#download the project
+git clone url
+
+
+
+
