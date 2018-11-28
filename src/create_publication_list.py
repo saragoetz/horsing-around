@@ -8,7 +8,7 @@ import sys
 ###############################################################################
 
 def MDheader(string, level=4):
-    return(f'{"#"*level}} {string}')
+    return(f'{"#"*level} {string}')
 
 def MDbold(string):
     return(f'**{string}**')
