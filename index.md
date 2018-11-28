@@ -1,4 +1,4 @@
-#List of Recent Research Publications about Horses
+# List of Recent Research Publications about Horses
 
 
 ## 2017
