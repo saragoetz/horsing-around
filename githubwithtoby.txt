@@ -64,10 +64,30 @@ git clone url
 
 
 #if you someone pushed sth for you and you pulled iton github, you still need to pull it onto your local computer with:
-git pull
+git pull origin master
+git push origin master
 
 
 ##########
-##########
+##########testing with travis via continuous integration
 https://github.com/tobyhodges/eipp-predoc-week-2018
+copy files in folder git
+https://travis-ci.org/#create vm with versions of all programs you are using and is texting your scripts and tells you about errors
 
+
+
+
+########github pages
+settings->options->github pages
+select your source e.g. master branch and save
+reach homepage via
+https://saragoetz.github.io/horsing-around/
+
+
+
+
+###
+to share changes do
+git add filename
+git commit -m 'what did you change'
+git push origin master
